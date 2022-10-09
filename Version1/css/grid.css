@@ -49,5 +49,5 @@ video{
 
 	grid-template:
 		"header header header" 10px
-		"item1 item2 item3"	90%/ 33%; 
+		"item1 item2 item3"	90%/ 33% 33% 33%; 
 }
