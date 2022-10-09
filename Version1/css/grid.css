@@ -1,10 +1,11 @@
 
-article{
+/*article{
 	position: relative;
-	width: 100%;
+	width: 33%;
 	height: auto;
 	overflow: hidden;
-}
+	background-color: lightcyan;
+}*/
 .grid-container > *{
 	box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
 	border-radius: 4px;
@@ -14,13 +15,24 @@ article{
 .header{
 	grid-area: header;
 }
-.aside{
-	grid-area: aside;
-	background-color: rgba(255,255, 255, 0.5);
+
+.item0{
+	grid-area: item0;
+	background-color: #d3d9e3;
 }
-.main{
-	grid-area: main;
+.item1{
+	grid-area: item1;
+	background-color: blue;
 }
+.item2{
+	grid-area: item2;
+	background-color: red;
+}
+.item3{
+	grid-area: item3;
+	background-color: yellow;
+}
+
 video{
 	width: 100%;
 }
@@ -33,46 +45,22 @@ video{
 	text-align: center;
 	display: flex;
 	justify-content: center;
-}
+}	
+
 .grid-container{
 	display: grid;
 	gap: 10px;
 
 	grid-template:
 		"header" 20px
-		"aside" 60%
-		"main" auto;		
-}
-@media(max-width: 259px){
-	.grid-container{
-	grid-template:
-		"header" 20px
-		"aside" 800px
-		"main" 400px;
-	}
-}
-@media(min-width: 260px){
-	.grid-container{
-	grid-template:
-		"header" 20px
-		"aside" 500px
-		"main" 400px;
-	}
-}
-
-@media(min-width: 460px){
-	.grid-container{
-	grid-template:
-		"header" 20px
-		"aside" 70%
-		"main" auto;
-	}
+		"item0" 
+		"item1"	40%
+		"item2"	45%;	
 }
 @media(min-width: 700px){
 	.grid-container{
 		grid-template:
-		"header header" 20px
-		"aside  main"	90%/
-		40% 60%;
+		"header header header" 10px
+		"item1 item2 item3" 33%/ 46% auto;
 	}
 }
