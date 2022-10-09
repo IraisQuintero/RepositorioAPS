@@ -1,7 +1,7 @@
 
 /*article{
 	position: relative;
-	width: 33%;
+	width: 100%;
 	height: auto;
 	overflow: hidden;
 	background-color: lightcyan;
@@ -16,21 +16,17 @@
 	grid-area: header;
 }
 
-.item0{
-	grid-area: item0;
-	background-color: #d3d9e3;
-}
 .item1{
 	grid-area: item1;
-	background-color: blue;
+	background-color: #D7F7FC ;
 }
 .item2{
 	grid-area: item2;
-	background-color: red;
+	background-color: #FFE3FF;
 }
 .item3{
-	grid-area: item3;
-	background-color: yellow;
+	grid-area: item3; 
+	background-color: #FCEAD7  ;
 }
 
 video{
@@ -52,15 +48,6 @@ video{
 	gap: 10px;
 
 	grid-template:
-		"header" 20px
-		"item0" 
-		"item1"	40%
-		"item2"	45%;	
-}
-@media(min-width: 700px){
-	.grid-container{
-		grid-template:
 		"header header header" 10px
-		"item1 item2 item3" 33%/ 46% auto;
-	}
+		"item1 item2 item3"	90%/ 33%; 
 }
