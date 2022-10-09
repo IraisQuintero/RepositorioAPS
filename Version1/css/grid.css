@@ -28,6 +28,11 @@
 	grid-area: item3; 
 	background-color: #FCEAD7  ;
 }
+.footer{
+    grid-area: footer;
+    background-color: #d3d9e3;
+}
+
 
 video{
 	width: 100%;
@@ -49,5 +54,6 @@ video{
 
 	grid-template:
 		"header header header" 10px
-		"item1 item2 item3"	90%/ 33% 33% 33%; 
+		"item1 item2 item3" auto
+		"footer footer footer" 90px/ 33% 33% 33%; 
 }
